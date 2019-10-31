@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "os";
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "os";
+  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans-Italic.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: "os";
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+
+.sc_contact_form_title{
+    font-family: Arial;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.sc_contact_form_in h2{
+    font-family: Arial;
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+}
+
+.mouse_scroll{
+    z-index: 9;
+    min-width: 35px;
+    max-width: 35px;
+    white-space: nowrap;
+    font-weight: 100;
+    color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 23px;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin: 80px 0 0 0;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    min-height: 55px;
+    max-height: 55px;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+}
+.mouse_scroll span{
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #fff;
+    border-radius: 50%;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: rev-ani-mouse;
+}
+@keyframes rev-ani-mouse
+{
+    0%{opacity:1;top:29%}
+    15%{opacity:1;top:50%}
+    50%{opacity:0;top:50%}
+    100%{opacity:0;top:29%}
+}
+@media (max-width: 1440px) and (min-width: 1280px){
+    .sc_contact_form_order .sc_contact_form_title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 25px 0 15px;
+    }
+}
+@media (max-width: 1135px) and (min-width: 960px){
+    .sc_contact_form_order .sc_contact_form_title {
+        font-size: 30px;
+        line-height: 26px;
+        margin: 25px 0 15px;
+    }
+}
+@media (max-width: 959px) and (min-width: 800px)
+{
+    .sc_contact_form_order .sc_contact_form_title {
+        font-size: 22px;
+        line-height: 26px;
+        margin: 50px 0 15px;
+    }
+}
+@media (max-width: 799px) and (min-width: 480px)
+{
+    .sc_contact_form_order .sc_contact_form_title {
+        font-size: 15px;
+        line-height: 12px;
+        margin: 40px 0 10px;
+    }
+    .sc_contact_form_in h2 {
+        font-size: 12px;
+    }
+    .mouse_scroll {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 479px)
+{
+    .sc_contact_form_order .sc_contact_form_title {
+        display: block;
+        color: #fff;
+        font-size: 17px;
+        line-height: 25px;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .sc_contact_form_in h2 {
+        font-size: 12px;
+    }
+    .mouse_scroll {
+        margin-top: 30px;
+    }
+}
+.logo .logo_text {
+    width: 110px;
+    height: 34px;
+    display: block;
+    background-image: url(../images/temps/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 110px 34px;
+    text-indent: -9999px;
+}
+
+.top_panel_fixed.top_panel_over.top_panel_opacity_transparent .top_panel_wrap {
+    background-color: #f7efac;
+}
+.menu_user_wrap .menu_user_nav li > a, .menu_main_wrap .menu_main_nav li > a {
+    color: #555;
+}
+.menu_main_wrap .menu_main_nav > li.current-menu-ancestor > a,
+.menu_main_wrap .menu_main_nav > li:hover > a {
+    border-color: rgba(85, 85, 85, 1);
+}
+
+.sc_title, .page_title,.woocommerce .related h2{
+    font-family: 'os';
+}
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.25em;
+    padding: 0;
+    overflow: hidden;
+}
+.woocommerce .products .sale-off, .woocommerce .products .days {
+    display: inline-block;
+    padding: 0px 10px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.woocommerce .products .days {
+    background-color: #11a99a;
+    margin-right: 7px;
+}
+.woocommerce .products .sale-off {
+    background-color: #eb6810;
+}
+.columns_wrap .sc_title_style_2{
+    text-transform: uppercase;
+}
+.image_bg_2 {
+    background-image: url(../images/temps/bg-foot.jpg);
+}
+.image_bg_7 {
+    background: url(../images/temp/1920x531.png) no-repeat center top #f7efac;
+}
+.sc_overtitle{
+    font-family: "os";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sc_undertitle{
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.sc_button.sc_button_size_large {
+    font-family: 'Arial';
+    font-size: 15px;
+    padding: 5px 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.copyright_wrap .content_wrap .sc_title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 26px;
+    height: 50px;
+    display: block;
+    background-image: url(../images/temps/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110px 34px;
+    text-indent: -9999px;
+}
+.detail-page{
+    background-color: #ffff;
+}
+.detail-page .container{
+    width: 100%;
+    margin: 0;
+}
+.detail-page .content{
+    padding: 0;
+}
+.isotope_wrap .isotope_item .post_title {
+    font-size: 25px;
+}
+.post_item_excerpt.post_featured_right .post_title {
+    font-family: 'Arial';
+    font-size: 30px;
+}
